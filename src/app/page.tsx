@@ -575,18 +575,35 @@ export default function KamilyDev() {
             Estou aberta a projetos freelance, colaborações e oportunidades full-time. Me chama!
           </p>
 
-          <a
-            href="mailto:kamily@email.com"
-            className="f-syne font-600 inline-block
-                       text-[clamp(16px,2vw,24px)] tracking-wide text-white
-                       border border-white/10 hover:border-[#A78BFA]/60
-                       px-10 py-5 rounded-2xl
-                       bg-white/[.03] hover:bg-[#A78BFA]/10
-                       transition-all duration-300
-                       hover:shadow-[0_0_40px_rgba(167,139,250,.2)]"
-          >
-            kamily@email.com ✦
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="mailto:kamislordd@gmail.com"
+              className="f-syne font-600 inline-flex items-center gap-2
+                         text-[clamp(13px,1.6vw,18px)] tracking-wide text-white
+                         border border-white/10 hover:border-[#A78BFA]/60
+                         px-8 py-4 rounded-2xl
+                         bg-white/[.03] hover:bg-[#A78BFA]/10
+                         transition-all duration-300
+                         hover:shadow-[0_0_40px_rgba(167,139,250,.2)]"
+            >
+              <span className="text-[#A78BFA]">✉</span>
+              kamislordd@gmail.com
+            </a>
+
+            <a
+              href="tel:+5521077405347"
+              className="f-syne font-600 inline-flex items-center gap-2
+                         text-[clamp(13px,1.6vw,18px)] tracking-wide text-white
+                         border border-white/10 hover:border-[#34D399]/60
+                         px-8 py-4 rounded-2xl
+                         bg-white/[.03] hover:bg-[#34D399]/10
+                         transition-all duration-300
+                         hover:shadow-[0_0_40px_rgba(52,211,153,.2)]"
+            >
+              <span className="text-[#34D399]">✆</span>
+              21 07740-5347
+            </a>
+          </div>
 
           <div className="flex justify-center gap-8 mt-14">
             {["GitHub", "LinkedIn", "Twitter", "Dribbble"].map((s) => (
