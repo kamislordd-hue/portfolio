@@ -43,17 +43,14 @@ const projects = [
 ];
 
 const skills = [
-  { name: "React / Next.js", level: 95 },
-  { name: "TypeScript", level: 90 },
-  { name: "Node.js", level: 85 },
-  { name: "UI/UX Design", level: 80 },
-  { name: "PostgreSQL", level: 75 },
-  { name: "React Native", level: 70 },
+  { name: "JavaScript", level: 85 },
+  { name: "Java", level: 75 },
+  { name: "Python", level: 70 },
 ];
 
 const tools = [
-  "Next.js","TypeScript","React","Node.js","Tailwind","Figma",
-  "PostgreSQL","Prisma","Docker","Supabase","GraphQL","AWS",
+  "JavaScript","Java","Python","React","Next.js","Node.js",
+  "Tailwind","Git","GitHub","HTML","CSS","SQL",
 ];
 
 const navLinks = ["Início","Sobre","Projetos","Skills","Contato"];
@@ -388,7 +385,7 @@ export default function KamilyDev() {
                 { icon: "✦", label: "Ano de exp.", val: "1" },
                 { icon: "◆", label: "Projetos entregues", val: "10+" },
                 { icon: "▲", label: "Open source", val: "5" },
-                { icon: "●", label: "Commits no GitHub", val: "300+" },
+                { icon: "●", label: "Tecnologias dominadas", val: "10" },
               ].map((s) => (
                 <div
                   key={s.label}
