@@ -591,7 +591,7 @@ export default function KamilyDev() {
             </a>
 
             <a
-              href="tel:+5521077405347"
+              href="tel:+5521977405347"
               className="f-syne font-600 inline-flex items-center gap-2
                          text-[clamp(13px,1.6vw,18px)] tracking-wide text-white
                          border border-white/10 hover:border-[#34D399]/60
@@ -601,7 +601,7 @@ export default function KamilyDev() {
                          hover:shadow-[0_0_40px_rgba(52,211,153,.2)]"
             >
               <span className="text-[#34D399]">✆</span>
-              21 07740-5347
+              21 97740-5347
             </a>
           </div>
 
