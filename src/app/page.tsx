@@ -385,10 +385,10 @@ export default function KamilyDev() {
 
             <div className="grid grid-cols-2 gap-4">
               {[
-                { icon: "✦", label: "Anos de exp.", val: "5+" },
-                { icon: "◆", label: "Projetos entregues", val: "40+" },
-                { icon: "●", label: "Clientes felizes", val: "18" },
-                { icon: "▲", label: "Open source", val: "12" },
+                { icon: "✦", label: "Ano de exp.", val: "1" },
+                { icon: "◆", label: "Projetos entregues", val: "10+" },
+                { icon: "▲", label: "Open source", val: "5" },
+                { icon: "●", label: "Commits no GitHub", val: "300+" },
               ].map((s) => (
                 <div
                   key={s.label}
