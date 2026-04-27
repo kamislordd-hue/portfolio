@@ -46,11 +46,13 @@ const skills = [
   { name: "JavaScript", level: 85 },
   { name: "Java", level: 75 },
   { name: "Python", level: 70 },
+  { name: "React / Next.js", level: 80 },
+  { name: "Node.js", level: 72 },
+  { name: "UI/UX Design", level: 65 },
 ];
 
 const tools = [
-  "JavaScript","Java","Python","React","Next.js","Node.js",
-  "Tailwind","Git","GitHub","HTML","CSS","SQL",
+  "JavaScript","Java","Python","React","Next.js","Node.js","TypeScript",
 ];
 
 const navLinks = ["Início","Sobre","Projetos","Skills","Contato"];
