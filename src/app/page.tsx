@@ -3,7 +3,19 @@
 import { useState, useEffect, useRef } from "react";
 
 /* ─── DATA ─── */
-const projects: never[] = [];
+const projects = [
+  {
+    id: 1,
+    tag: "Front-end",
+    title: "To-Do List",
+    desc: "Lista de tarefas com adicionar, concluir e deletar. Dados salvos automaticamente no navegador.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    year: "2024",
+    color: "#A78BFA",
+    demo: "https://kamislordd-hue.github.io/meu-primeiro-projeto/",
+    github: "https://github.com/kamislordd-hue/meu-primeiro-projeto",
+  },
+];
 
 const skills = [
   { name: "JavaScript", level: 85 },
