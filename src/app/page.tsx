@@ -3,44 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 
 /* ─── DATA ─── */
-const projects = [
-  {
-    id: 1,
-    tag: "Full Stack",
-    title: "Lumina Finance",
-    desc: "Dashboard de finanças pessoais com IA, gráficos em tempo real e notificações inteligentes.",
-    stack: ["Next.js", "Prisma", "OpenAI", "Recharts"],
-    year: "2024",
-    color: "#A78BFA",
-  },
-  {
-    id: 2,
-    tag: "Front-end",
-    title: "Bloom Design System",
-    desc: "Sistema de design acessível com 60+ componentes, Storybook e documentação interativa.",
-    stack: ["React", "TypeScript", "Storybook", "Radix"],
-    year: "2024",
-    color: "#F472B6",
-  },
-  {
-    id: 3,
-    tag: "Mobile",
-    title: "Flora App",
-    desc: "App de rastreamento de hábitos com gamificação, notificações e sync em nuvem.",
-    stack: ["React Native", "Expo", "Supabase"],
-    year: "2023",
-    color: "#34D399",
-  },
-  {
-    id: 4,
-    tag: "Back-end",
-    title: "Orbit API",
-    desc: "API REST escalável para plataforma SaaS com autenticação, webhooks e rate limiting.",
-    stack: ["Node.js", "Fastify", "PostgreSQL", "Redis"],
-    year: "2023",
-    color: "#60A5FA",
-  },
-];
+const projects: never[] = [];
 
 const skills = [
   { name: "JavaScript", level: 85 },
@@ -421,80 +384,24 @@ export default function KamilyDev() {
               </h2>
             </div>
             <span className="hidden md:block text-[10px] tracking-[.15em] uppercase text-[#9D96B8]">
-              0{projects.length} trabalhos
+              Em construção 🚀
             </span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {projects.map((p) => (
-              <div
-                key={p.id}
-                className="card-glow group relative rounded-2xl border border-white/[.07]
-                           bg-gradient-to-br from-white/[.03] to-transparent
-                           p-7 cursor-pointer overflow-hidden"
-                onClick={() => setActive(activeProject === p.id ? null : p.id)}
-              >
-                {/* Color accent top */}
-                <div
-                  className="absolute top-0 left-0 right-0 h-px opacity-60"
-                  style={{ background: `linear-gradient(90deg, transparent, ${p.color}, transparent)` }}
-                />
-                {/* Glow spot */}
-                <div
-                  className="absolute -top-16 -right-16 w-48 h-48 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                  style={{ background: `radial-gradient(circle, ${p.color}22 0%, transparent 70%)` }}
-                />
-
-                <div className="flex items-start justify-between mb-5">
-                  <span
-                    className="tag-chip text-[9px] tracking-[.14em] uppercase px-3 py-1 rounded-full"
-                    style={{ color: p.color }}
-                  >
-                    {p.tag}
-                  </span>
-                  <span className="text-[10px] text-[#9D96B8]">{p.year}</span>
-                </div>
-
-                <h3
-                  className="f-syne font-700 text-[clamp(20px,2.5vw,28px)] text-white mb-3
-                             group-hover:transition-colors"
-                  style={{ color: activeProject === p.id ? p.color : undefined,
-                           transition: "color .2s" }}
-                >
-                  {p.title}
+            {projects.length === 0 && (
+              <div className="col-span-2 flex flex-col items-center justify-center
+                              border border-dashed border-white/[.1] rounded-2xl
+                              py-20 px-8 text-center">
+                <div className="text-5xl mb-5">🚀</div>
+                <h3 className="f-syne font-600 text-lg text-white mb-3">
+                  Projetos em breve!
                 </h3>
-
-                <p className="text-[11px] leading-[1.9] text-[#9D96B8] mb-6">
-                  {p.desc}
+                <p className="text-[11px] leading-[2] text-[#9D96B8] max-w-sm">
+                  Estou construindo projetos reais para compartilhar aqui. Volte em breve e acompanhe minha evolução!
                 </p>
-
-                <div className="flex flex-wrap gap-2">
-                  {p.stack.map((s) => (
-                    <span
-                      key={s}
-                      className="text-[9px] tracking-wide bg-white/[.05] border border-white/[.08]
-                                 text-[#9D96B8] px-2.5 py-1 rounded-lg"
-                    >
-                      {s}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Expand */}
-                {activeProject === p.id && (
-                  <div className="mt-5 pt-5 border-t border-white/[.08] flex gap-4">
-                    <a href="#" className="text-[10px] tracking-[.12em] uppercase
-                                          text-[#A78BFA] hover:text-white transition-colors">
-                      Ver demo →
-                    </a>
-                    <a href="#" className="text-[10px] tracking-[.12em] uppercase
-                                          text-[#9D96B8] hover:text-white transition-colors">
-                      GitHub ↗
-                    </a>
-                  </div>
-                )}
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -520,23 +427,16 @@ export default function KamilyDev() {
             </p>
           </div>
 
-          <div className="space-y-6">
-            {skills.map((s, i) => (
-              <div key={s.name}>
-                <div className="flex justify-between mb-2">
-                  <span className="text-[11px] tracking-wide text-[#E8E2F5]">{s.name}</span>
-                  <span className="text-[11px] text-[#A78BFA]">{s.level}%</span>
-                </div>
-                <div className="h-1.5 bg-white/[.06] rounded-full overflow-hidden">
-                  <div
-                    className="skill-bar-fill h-full rounded-full"
-                    style={{
-                      width: visible ? `${s.level}%` : "0%",
-                      background: `linear-gradient(90deg, #A78BFA, #F472B6)`,
-                      transitionDelay: `${i * 100 + 400}ms`,
-                    }}
-                  />
-                </div>
+          <div className="flex flex-wrap gap-3">
+            {skills.map((s) => (
+              <div
+                key={s.name}
+                className="flex items-center gap-2 border border-white/[.08]
+                           bg-white/[.03] hover:bg-[#A78BFA]/10 hover:border-[#A78BFA]/40
+                           transition-all duration-200 px-5 py-3 rounded-2xl"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-[#A78BFA]" />
+                <span className="text-[12px] tracking-wide text-[#E8E2F5]">{s.name}</span>
               </div>
             ))}
           </div>
