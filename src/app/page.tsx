@@ -7,7 +7,7 @@ const projects = [
   {
     id: 1,
     tag: "Front-end",
-    title: "To-Do List",
+    title: "s",
     desc: "Lista de tarefas com adicionar, concluir e deletar. Dados salvos automaticamente no navegador.",
     stack: ["HTML", "CSS", "JavaScript"],
     year: "2024",
