@@ -3,52 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 
 /* ─── DATA ─── */
-const projects = [
-  {
-    id: 1,
-    tag: "Front-end",
-    title: "To-Do List",
-    desc: "Lista de tarefas com prioridade, filtros e data de criação. Dados salvos automaticamente no navegador.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    year: "2025",
-    color: "#A78BFA",
-    demo: "https://kamislordd-hue.github.io/projeto-list",
-    github: "https://github.com/kamislordd-hue/projeto-list",
-  },
-  {
-    id: 1,
-    tag: "Front-end",
-    title: "To-Do List",
-    desc: "Lista de tarefas com prioridade, filtros e data de criação. Dados salvos automaticamente no navegador.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    year: "2025",
-    color: "#A78BFA",
-    demo: "https://kamislordd-hue.github.io/projeto-list",
-    github: "https://github.com/kamislordd-hue/projeto-list",
-  },
-  {
-    id: 1,
-    tag: "Front-end",
-    title: "To-Do List",
-    desc: "Lista de tarefas com prioridade, filtros e data de criação. Dados salvos automaticamente no navegador.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    year: "2025",
-    color: "#A78BFA",
-    demo: "https://kamislordd-hue.github.io/projeto-list",
-    github: "https://github.com/kamislordd-hue/projeto-list",
-  },
-  {
-    id: 1,
-    tag: "Front-end",
-    title: "To-Do List",
-    desc: "Lista de tarefas com prioridade, filtros e data de criação. Dados salvos automaticamente no navegador.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    year: "2025",
-    color: "#A78BFA",
-    demo: "https://kamislordd-hue.github.io/projeto-list",
-    github: "https://github.com/kamislordd-hue/projeto-list",
-  },
-  {
+const projects = [{
     id: 1,
     tag: "Front-end",
     title: "To-Do List",
@@ -435,6 +390,7 @@ export default function KamilyDev() {
       </section>
 
       {/* ════════ PROJECTS ════════ */}
+    
       <section id="projetos" className="px-6 md:px-12 py-24 bg-[#0A0812]">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-end justify-between mb-16">
