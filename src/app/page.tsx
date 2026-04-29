@@ -8,12 +8,23 @@ const projects = [
     id: 1,
     tag: "Front-end",
     title: "To-Do List",
-    desc: "Lista de tarefas com adicionar, concluir e deletar. Dados salvos automaticamente no navegador.",
+    desc: "Lista de tarefas com prioridade, filtros e data de criação. Dados salvos automaticamente no navegador.",
     stack: ["HTML", "CSS", "JavaScript"],
     year: "2025",
     color: "#A78BFA",
     demo: "https://kamislordd-hue.github.io/projeto-list",
     github: "https://github.com/kamislordd-hue/projeto-list",
+  },
+  {
+    id: 2,
+    tag: "Front-end",
+    title: "Livro de Receitas",
+    desc: "Livro de receitas brasileiras com busca, filtros por categoria e barras de porcentagem dos ingredientes.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    year: "2025",
+    color: "#F472B6",
+    demo: "https://kamislordd-hue.github.io/pagina-receitas",
+    github: "https://github.com/kamislordd-hue/pagina-receitas",
   },
 ];
 
@@ -32,7 +43,6 @@ const tools = [
 
 const navLinks = ["Início","Sobre","Projetos","Skills","Contato"];
 
-/* ─── COMPONENT ─── */
 export default function KamilyDev() {
   const [visible, setVisible] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -103,7 +113,7 @@ export default function KamilyDev() {
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-5 bg-[#0D0B14]/80 backdrop-blur-md border-b border-white/[.06]">
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-[#A78BFA] glow-pulse" />
-          <span className="f-syne font-700 text-base tracking-tight text-white">
+          <span className="f-syne font-bold text-base tracking-tight text-white">
             kamily<span className="text-[#A78BFA]">.dev</span>
           </span>
         </div>
@@ -249,7 +259,7 @@ export default function KamilyDev() {
               </h2>
             </div>
             <span className="hidden md:block text-[10px] tracking-[.15em] uppercase text-[#9D96B8]">
-              {projects.length} trabalho{projects.length !== 1 ? "s" : ""}
+              {projects.length} trabalhos
             </span>
           </div>
 
