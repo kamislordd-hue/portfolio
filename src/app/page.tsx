@@ -405,12 +405,13 @@ export default function KamilyDev() {
               <div className="col-span-2 flex flex-col items-center justify-center
                               border border-dashed border-white/[.1] rounded-2xl
                               py-20 px-8 text-center">
+                <a href="https://kamislordd-hue.github.io/projeto-list" target="_blank" className="text-[#A78BFA] text-sm underline hover:text-white transition-colors">Ver projeto →</a>
                 <div className="text-5xl mb-5">🚀</div>
                 <h3 className="f-syne font-600 text-lg text-white mb-3">
                   To-Do List ✨
                 </h3>
                 <p className="text-[11px] leading-[2] text-[#9D96B8] max-w-sm">
-                  Lista de tarefas com prioridade, filtros e data. Clique para ver o projeto!
+                  Lista de tarefas com prioridade, filtros e data.
                 </p>
               </div>
             )}
